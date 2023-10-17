@@ -11,13 +11,14 @@ import AddForm from './component/AddForm'
 import Update from './component/Update'
 import Details from './component/Details'
 import PrivateRoute from './component/PrivateRoute'
+import Error from './component/Error'
 
 
 const router = createBrowserRouter([
   {
     path:'/',
     element:<Layout></Layout>,
-    errorElement:<></>,
+    errorElement:<Error></Error>,
     children:[
       {
         path:'/',
