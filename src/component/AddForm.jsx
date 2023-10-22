@@ -16,7 +16,7 @@ const AddForm = () => {
         const image = form.image.value;
         const newCoffee = {name,chef,supplier,taste,category,price,image}
         console.log(newCoffee);
-        fetch('http://localhost:5000/coffee',{
+        fetch('https://coffee-express-server-kavshrfgt-sahariars-projects.vercel.app/coffee',{
             method:'POST',
             headers:{
               'content-type':'application/json'

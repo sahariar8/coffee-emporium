@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home></Home>,
-        loader:()=>fetch('http://localhost:5000/coffee')
+        loader:()=>fetch('https://coffee-express-server-dc3tulwl8-sahariars-projects.vercel.app/coffee')
       },
       {
         path:'/login',
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       {
         path:'/details/:id',
         element:<PrivateRoute><Details></Details></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/coffee/${params.id}`)
+        loader:({params})=>fetch(`https://coffee-express-server-dc3tulwl8-sahariars-projects.vercel.app/coffee/${params.id}`)
       },
       {
         path:'/addform',
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
       {
         path:'/coffee/:id',
         element:<PrivateRoute><Update></Update></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/coffee/${params.id}`)
+        loader:({params})=>fetch(`https://coffee-express-server-dc3tulwl8-sahariars-projects.vercel.app/coffee/${params.id}`)
       },
     ]
   }

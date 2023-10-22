@@ -26,7 +26,7 @@ const Item = ({ item,coffees,setCoffees }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/coffee/${_id}`, {
+        fetch(`https://coffee-express-server-dc3tulwl8-sahariars-projects.vercel.app/${_id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())
@@ -57,7 +57,7 @@ const Item = ({ item,coffees,setCoffees }) => {
     //   confirmButtonText: "Yes, delete it!",
     // }).then((result) => {
     //   if (result.isConfirmed) {
-    //     fetch(`http://localhost:5000/coffee/${_id}`, {
+    //     fetch(`https://coffee-express-server-kavshrfgt-sahariars-projects.vercel.app/coffee/${_id}`, {
     //   method: "DELETE",
     // })
     //   .then((res) => res.json())

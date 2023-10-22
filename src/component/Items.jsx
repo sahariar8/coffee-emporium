@@ -4,8 +4,9 @@ import { GiCoffeeCup }  from 'react-icons/gi'
 import { Link } from 'react-router-dom';
 
 
-const Items = ({items}) => {
-  const [coffees,setCoffees] = useState(items)
+const Items = ({citems}) => {
+
+  const [coffees,setCoffees] = useState(citems);
 
   
     return (
